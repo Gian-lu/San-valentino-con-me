@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorpresa di San Valentino</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sorpresa di San Valentino</h1>
+        <p>Ciao [Nome],</p>
+        <p>Vorresti uscire con me per San Valentino?</p>
+        <button onclick="showMessage('Sì')">Sì</button>
+        <button onclick="showMessage('No')">No</button>
+        <p id="responseMessage"></p>
+    </div>
+    <script>
+        function showMessage(response) {
+            const message = response === 'Sì' ? 'Fantastico! Non vedo l\'ora!' : 'Peccato, magari un\'altra volta!';
+            document.getElementById('responseMessage').innerText = message;
+        }
+    </script>
+</body>
+</html>
